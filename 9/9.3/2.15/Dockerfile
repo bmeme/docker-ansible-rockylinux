@@ -9,7 +9,9 @@ ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 env ANSIBLE_CORE_VERSION=2.15
 
-RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+RUN dnf makecache \
+    && dnf -y install systemd; \
+    (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
     rm -f /lib/systemd/system/multi-user.target.wants/*;\
     rm -f /etc/systemd/system/*.wants/*;\
     rm -f /lib/systemd/system/local-fs.target.wants/*; \
