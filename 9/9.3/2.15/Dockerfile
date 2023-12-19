@@ -23,6 +23,7 @@ RUN dnf makecache \
 # Install requirements.
 RUN dnf makecache \
     && dnf -y install \
+        iproute \
         initscripts \
         sudo \
         which \

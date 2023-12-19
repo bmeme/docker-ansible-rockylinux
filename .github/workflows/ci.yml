@@ -3,7 +3,9 @@ name: CI Bmeme Rockylinux/Ansible container images
 on:
   push:
     branches:
-      - "*"
+      - '*'
+      - '*/*'
+      - '**'
       - "!main"
 
 env:
