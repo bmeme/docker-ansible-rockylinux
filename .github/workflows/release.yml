@@ -61,7 +61,7 @@ jobs:
         name: Push images to Docker Hub
         id: push
         env:
-          DOCKERFILE: ${{ matrix.os_version }}/${{ matrix.ansible_version }}/Dockerfile
+          DOCKERFILE: ${{ matrix.os_family }}/${{ matrix.os_version }}/${{ matrix.ansible_version }}/Dockerfile
           MAIN_TAG: ${{ matrix.name }}
         run: |
           {
