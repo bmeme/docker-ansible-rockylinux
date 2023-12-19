@@ -7,7 +7,7 @@ on:
 
 env:
   registry: docker.io
-  repository: bmeme/docker-ansible-ubuntu
+  repository: bmeme/docker-ansible-rockylinux
 
 jobs:
 
@@ -44,7 +44,7 @@ jobs:
         name: Build images
         id: build
         env:
-          DOCKERFILE: ${{ matrix.os_version }}/${{ matrix.ansible_version }}/Dockerfile
+          DOCKERFILE: ${{ matrix.os_family }}/${{ matrix.os_version }}/${{ matrix.ansible_version }}/Dockerfile
           MAIN_TAG: ${{ matrix.name }}
         run: |
           {
