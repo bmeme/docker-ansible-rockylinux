@@ -21,6 +21,7 @@ RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == system
 # Install requirements.
 RUN dnf makecache \
     && dnf -y install \
+        iproute \
         initscripts \
         sudo \
         which \
