@@ -4,7 +4,7 @@
 Rockylinux "Ansible Ready" Packaged by Bmeme
 =========
 
-Rockylinux "Ansible Ready" images based on [official Rockylinux repository](https://hub.docker.com/_/rockylinux), currently used by Bmeme for its `molecule` tests during Ansible Role development.
+Rockylinux "Ansible Ready" images based on [official Rocky Enterprise Software Foundation repository](https://hub.docker.com/r/rockylinux/rockylinux), currently used by Bmeme for its `molecule` tests during Ansible Role development.
 
 ## What is contained in the images
 * ansible-core
@@ -16,10 +16,16 @@ Rockylinux "Ansible Ready" images based on [official Rockylinux repository](http
 * python3-pip
 
 ## Supported tags and respective `Dockerfile` links
+- `9.4-2.15`, `latest` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.4/2.15/Dockerfile)
+- `8.10-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.10/2.11/Dockerfile)
+
+## Old tags not more supported 
 - `9.3-2.15`, `latest` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.3/2.15/Dockerfile)
 - `8.9-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.9/2.11/Dockerfile)
 - `8.8-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.8/2.11/Dockerfile)
 - `8.7-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.9/2.11/Dockerfile)
+
+This old images was based on the Docker official repo (https://hub.docker.com/_/rockylinux)
 
 ## Tag system
 The tag of each image is composed by two values, separated by a `-`. 
