@@ -2,30 +2,16 @@
     "include": 
     [
       {
-        "name": "9.3-2.15",
+        "name": "9.4-2.15",
         "os_family": "9",
-        "os_version": "9.3",
+        "os_version": "9.4",
         "ansible_version": "2.15",
         "latest": true
       },
       {
-        "name": "8.9-2.11",
+        "name": "8.10-2.11",
         "os_family": "8",
-        "os_version": "8.9",
-        "ansible_version": "2.11",
-        "latest": false
-      },
-      {
-        "name": "8.8-2.11",
-        "os_family": "8",
-        "os_version": "8.8",
-        "ansible_version": "2.11",
-        "latest": false
-      },
-      {
-        "name": "8.7-2.11",
-        "os_family": "8",
-        "os_version": "8.8",
+        "os_version": "8.10",
         "ansible_version": "2.11",
         "latest": false
       }
