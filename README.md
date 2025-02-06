@@ -16,16 +16,14 @@ Rockylinux "Ansible Ready" images based on [official Rocky Enterprise Software F
 * python3-pip
 
 ## Supported tags and respective `Dockerfile` links
-- `9.4-2.15`, `latest` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.4/2.15/Dockerfile)
+- `9.4-2.18`, `latest` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.4/2.18/Dockerfile)
+- `9.4-2.17` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.4/2.17/Dockerfile)
+- `9.4-2.16`, [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.4/2.16/Dockerfile)
+- `9.4-2.15`, [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.4/2.15/Dockerfile)
+- `8.10-2.15` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.10/2.15/Dockerfile)
+- `8.10-2.14` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.10/2.14/Dockerfile)
+- `8.10-2.13` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.10/2.13/Dockerfile)
 - `8.10-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.10/2.11/Dockerfile)
-
-## Old tags not more supported 
-- `9.3-2.15`, `latest` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/9/9.3/2.15/Dockerfile)
-- `8.9-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.9/2.11/Dockerfile)
-- `8.8-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.8/2.11/Dockerfile)
-- `8.7-2.11` [Dockerfile](https://github.com/bmeme/docker-ansible-rockylinux/blob/main/8/8.9/2.11/Dockerfile)
-
-This old images was based on the Docker official repo (https://hub.docker.com/_/rockylinux)
 
 ## Tag system
 The tag of each image is composed by two values, separated by a `-`. 
