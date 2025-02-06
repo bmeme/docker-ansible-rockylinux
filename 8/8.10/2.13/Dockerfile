@@ -1,17 +1,15 @@
-FROM rockylinux:9.3
+FROM rockylinux/rockylinux:8.10-ubi
 LABEL   com.bmeme.project.family='RockyLinux Docker Image' \
-        com.bmeme.project.version='9.3-2.15' \
+        com.bmeme.project.version='8.10-2.13' \
         com.bmeme.maintainer.1='Daniele Piaggesi <daniele.piaggesi@bmeme.com>' \
         com.bmeme.maintainer.2='Roberto Mariani <roberto.mariani@bmeme.com>' \
-        com.bmeme.refreshedat='2023-12-19'
+        com.bmeme.refreshedat='2025-02-06'
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
-env ANSIBLE_CORE_VERSION=2.15
+env ANSIBLE_CORE_VERSION=2.13
 
-RUN dnf makecache \
-    && dnf -y install systemd; \
-    (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
     rm -f /lib/systemd/system/multi-user.target.wants/*;\
     rm -f /etc/systemd/system/*.wants/*;\
     rm -f /lib/systemd/system/local-fs.target.wants/*; \

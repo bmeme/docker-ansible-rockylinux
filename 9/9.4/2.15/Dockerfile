@@ -1,9 +1,9 @@
-FROM rockylinux/rockylinux:9.3
+FROM rockylinux/rockylinux:9.4-ubi
 LABEL   com.bmeme.project.family='RockyLinux Docker Image' \
-        com.bmeme.project.version='9.3-2.15' \
+        com.bmeme.project.version='9.4-2.15' \
         com.bmeme.maintainer.1='Daniele Piaggesi <daniele.piaggesi@bmeme.com>' \
         com.bmeme.maintainer.2='Roberto Mariani <roberto.mariani@bmeme.com>' \
-        com.bmeme.refreshedat='2025-01-30'
+        com.bmeme.refreshedat='2025-02-06'
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
